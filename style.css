@@ -50,6 +50,27 @@ body {
     border-right: none;
     margin-left: 10px;
 }
+#nav h1::after{
+    content: "©";
+    font-family: open sans;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+    left: 105%;
+    right: 15%;
+}
+#nav h1::before{
+    content: "model management";
+    position: absolute;
+    font-size: 11px;
+    font-family: open sans;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    top:90%;
+    bottom: 3%;
+    right: 17%;
+}
 
 #nav h1 {
     margin-right: 20px;
@@ -57,6 +78,7 @@ body {
     align-self: center;
     align-items: center;
     font-size: 5.5vh;
+    position: relative;
 }
 
 #center {
@@ -125,6 +147,7 @@ body {
     color: #333;
     text-align: center;
 }
+
 #alphabet h4 {
     font-weight: 500;
     font-size: 3vh;
@@ -136,7 +159,8 @@ body {
     justify-items: center;
     align-self: center;
 }
-#shot{
+
+#shot {
     margin-top: 30px;
     display: flex;
     /* background-color: burlywood; */
@@ -144,39 +168,302 @@ body {
     padding: 5%;
     width: 100%;
 }
-#left-shot{
+
+#left-shot {
     height: 100%;
     width: 50%;
     /* background-color: red; */
 }
-#left-shot img{
+
+#left-shot img {
     height: 95%;
     width: 70%;
 }
-#left-shot h3{
+
+#left-shot h3 {
     font-size: 40px;
     margin-top: 10px;
 }
-#right-shot{
+
+#right-shot {
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
 }
-#right-shot img{
+
+#right-shot img {
     height: 70%;
 }
-#para{
+
+#para {
     display: flex;
     margin-top: 5vh;
     align-items: center;
     align-content: space-between;
 }
-#para h4{
+
+#para h4 {
     font-size: 20px;
     margin-right: 10px;
 }
-#para p{
+
+#para p {
     font-size: 20px;
     margin-left: 20px;
+}
+
+#updates {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: cadetblue; */
+    padding: 4vw 5vw;
+}
+
+#updates>h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: monumnet;
+    font-size: 3vw;
+    font-weight: 900;
+    margin-bottom: 7vh;
+}
+
+#page5 {
+    height: 100%;
+    width: 100%;
+    padding: 0.1px;
+    padding: 0 5vw;
+}
+
+#page5>h1 {
+    font-size: 3vw;
+    font-family: monument;
+    font-weight: 600;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+
+    text-align: center;
+}
+
+.elem {
+    height: 19.5vh;
+    border-top: 2px solid #000;
+    position: relative;
+    display: flex;
+    padding-left: 2vw;
+}
+
+.elem img {
+    position: absolute;
+    height: 115px;
+    width: 118px;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.elem:hover img {
+    opacity: 1;
+    left: 25%;
+}
+
+.el1 {
+    height: 100%;
+    width: 42%;
+    padding-top: 2vw;
+    padding-left: 0.2vw;
+    font-size: 1.2vw;
+    font-family: open sans;
+    font-weight: 400;
+
+}
+
+.el3 {
+    height: 100%;
+    width: 50%;
+    font-family: open sans thin;
+    font-weight: 700;
+    font-size: 1.5vw;
+    padding-top: 1.8vw;
+    padding-left: 10.8vw;
+
+}
+
+.elem:nth-child(5) {
+    border-bottom: 2px solid black;
+}
+
+#marque {
+    height: 12vh;
+    width: 100%;
+    margin-top: 4vw;
+    padding: 0.9vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+
+}
+
+#marque h1 {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: monument;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    margin-right: 16px;
+    letter-spacing: 3px;
+    animation-name: movetext;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes movetext {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer {
+    height: 50%;
+    width: 100%;
+    padding: 2vw 0;
+}
+
+#footgrid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#foot1 {
+    height: 100%;
+    width: 35%;
+    position: relative;
+}
+
+#foot1 h1 {
+    padding-left: 4vw;
+    padding-top: 2vw;
+    font-family: monument;
+    letter-spacing: -1.5px;
+    font-size: 35px;
+    position: relative;
+
+}
+
+#foot1 h1::after {
+    content: "©";
+    font-family: open sans;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 34%;
+    right: 47%;
+}
+
+#foot1 h1::before {
+    content: "model management";
+    position: absolute;
+    font-size: 11px;
+    font-family: open sans;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    top: 92%;
+    /* right: 50%; */
+}
+
+#foot1 h3 {
+    position: absolute;
+    font-family: open sans;
+    font-size: 1.4vw;
+    top: 14%;
+    right: 12%;
+    letter-spacing: -0.5px;
+}
+
+#foot2 {
+    height: 100%;
+    width: 25%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+
+#foot2 h3 {
+    font-family: open sans;
+    font-size: 1.4vw;
+    padding-left: 28%;
+    padding-top: 2.6vw;
+    letter-spacing: -0.5px;
+}
+
+#foot3 {
+    height: 100%;
+    width: 40%;
+
+}
+
+#ftop {
+    height: 40%;
+    width: 100%;
+    border-bottom: 2px solid #000;
+
+}
+
+#ftop h3 {
+    font-family: open sans;
+    font-size: 1.4vw;
+    padding-top: 2.5vw;
+    padding-left: 4vw;
+    letter-spacing: -0.5px;
+}
+
+#fbottom {
+    height: 60%;
+    width: 100%;
+    padding: 2vw 4vw;
+
+}
+
+#fbottom i {
+    font-size: 1.2vw;
+    margin-right: 1.2vw;
+
+}
+
+#fbottom h4 {
+    font-family: open sans;
+    font-size: 0.9vw;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+#page6 {
+    height: 100%;
+    width: 100%;
+    padding: 2vw 5vw;
+    padding-bottom: 1.8vw;
+}
+
+#page6 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
